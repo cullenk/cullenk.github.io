@@ -1,11 +1,9 @@
 
-body, html {
+html, body {
   height: 100%;
-  overflow-x: hidden;
 }
 
-.navigation,
-.jumbotron {
+.navigation {
   z-index: 2;
 }
 
@@ -19,17 +17,22 @@ body, html {
 
 @keyframes fill-it {
   100% {
-    fill: navy;
+    fill: black;
   }
 }
 
-svg {
-  height: 100%;
+.skyline {
+ max-width: 100vw;
+ height: auto;
+ position: absolute;
+ bottom: 0;
+ background-color: blue;
+ background-image: linear-gradient(326deg, navy 0%, skyblue 74%);
 }
 
 .logo {
   stroke: black;
-  stroke-width: 6;
+  stroke-width: 13;
   stroke-dasharray: 95294.8984375;
   stroke-dashoffset: 95294.8984375;
 
