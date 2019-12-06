@@ -4,6 +4,8 @@ body, html {
   overflow-x: hidden;
 }
 
+/* SVG Background Styles */
+
 @keyframes offset {
   100% {
     stroke-dashoffset: 0;
@@ -15,8 +17,6 @@ body, html {
     fill: navy;
   }
 }
-
-/* SVG Styles */
 
 svg {
   height: 100%;
