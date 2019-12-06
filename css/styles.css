@@ -35,3 +35,13 @@ svg {
 
   animation: offset 4s linear forwards, fill-it .8s 4s forwards;
 }
+
+/* About Page */
+
+.film-bg {
+  background-image: url("../img/film-background.jpg");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
