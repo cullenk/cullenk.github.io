@@ -1,0 +1,32 @@
+
+body, html {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: navy;
+  }
+}
+
+/* SVG Styles */
+
+svg {
+  height: 100%;
+}
+
+.logo {
+  stroke: black;
+  stroke-width: 6;
+  stroke-dasharray: 95294.8984375;
+  stroke-dashoffset: 95294.8984375;
+
+  animation: offset 4s linear forwards, fill-it .8s 4s forwards;
+}
