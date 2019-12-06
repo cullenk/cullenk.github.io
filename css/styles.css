@@ -4,6 +4,11 @@ body, html {
   overflow-x: hidden;
 }
 
+.navigation,
+.jumbotron {
+  z-index: 2;
+}
+
 /* SVG Background Styles */
 
 @keyframes offset {
