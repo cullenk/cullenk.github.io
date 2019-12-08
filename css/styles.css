@@ -5,8 +5,17 @@ html, body {
 
 .navigation {
   z-index: 2;
+  width: 100%;
 }
 
+.jumbotron {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+
+.sub {
+  color: red;
+  font-size: 1.8em;
+}
 /* SVG Background Styles */
 
 @keyframes offset {
@@ -23,7 +32,7 @@ html, body {
 
 .skyline {
  max-width: 100vw;
- min-height: 75vh;
+ min-height: 80vh;
  position: absolute;
  bottom: 0;
  z-index: -1;
@@ -46,6 +55,95 @@ html, body {
   background-image: url("../img/film-background.jpg");
   height: 100%;
   background-position: center;
-  background-repeat: no-repeat;
+  background-repeat:repeat;
   background-size: cover;
+}
+
+.profile-pic {
+  border-radius: 6%;
+  height: 30%;
+  width: 30%;
+  max-height: 310px;
+  max-width: 207px;
+  margin: auto;
+}
+
+.bio h3{
+  font-size: 3em;
+  color: red;
+}
+
+.bio p {
+  font-size: 1.3rem;
+  font-family: 'Imprima', sans-serif;
+}
+
+/* Carousel */
+.carousel-box {
+  max-width: 1500px;
+}
+
+.carousel-item img{
+  height: auto;
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Projects Page */
+
+
+.card {
+  box-shadow: 10px 10px 8px #888888;
+}
+
+.card-text {
+  font-family: 'Imprima', sans-serif;
+}
+
+.skills,
+h2 {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+
+.skill-image-circle {
+  height: 120px;
+  width: 120px;
+  padding: 10px;
+}
+
+.skill-image {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+
+.reveal:hover {
+  transform: scale(1.3);
+}
+
+/* Contact Logos */
+
+.linkedin:hover {
+  fill: teal;
+  transform: scale(1.2);
+}
+
+.facebook:hover {
+  fill: blue;
+  transform: scale(1.2);
+}
+
+.github:hover {
+  fill: purple;
+  transform: scale(1.2);
+}
+
+.email:hover {
+  fill: green;
+  transform: scale(1.2);
+}
+
+.phone:hover {
+  fill: orange;
+  transform: scale(1.2);
 }
