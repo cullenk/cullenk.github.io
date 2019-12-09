@@ -12,6 +12,11 @@ html, body {
   font-family: 'Waiting for the Sunrise', sans-serif;
 }
 
+.title-card:hover {
+  transform: scale(1.2);
+  transition: 2s;
+}
+
 .sub {
   color: red;
   font-size: 1.8em;
@@ -91,13 +96,32 @@ html, body {
 
 /* Projects Page */
 
-
 .card {
   box-shadow: 10px 10px 8px #888888;
 }
 
 .card-text {
   font-family: 'Imprima', sans-serif;
+}
+
+.live {
+  background-color: lightgreen;
+  transition: .5s;
+}
+
+.github {
+  background: lightsteelblue;
+  transition: .5s;
+}
+
+.live:hover {
+  background-color: forestgreen;
+  text-decoration: none;
+}
+
+.github:hover {
+  background: dodgerblue;
+  text-decoration: none;
 }
 
 .skills,
@@ -119,6 +143,7 @@ h2 {
 
 .reveal:hover {
   transform: scale(1.3);
+  transition: .5s;
 }
 
 /* Contact Logos */
@@ -126,24 +151,29 @@ h2 {
 .linkedin:hover {
   fill: teal;
   transform: scale(1.2);
+  transition: .5s;
 }
 
 .facebook:hover {
   fill: blue;
   transform: scale(1.2);
+  transition: .5s;
 }
 
-.github:hover {
+.github-contact:hover {
   fill: purple;
   transform: scale(1.2);
+  transition: .5s;
 }
 
 .email:hover {
   fill: green;
   transform: scale(1.2);
+  transition: .5s;
 }
 
 .phone:hover {
   fill: orange;
   transform: scale(1.2);
+  transition: .5s;
 }
