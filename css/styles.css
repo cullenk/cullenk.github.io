@@ -230,3 +230,7 @@ hr {
 .phone {
   fill: gold;
 }
+
+.footer {
+  bottom: 0;
+}
