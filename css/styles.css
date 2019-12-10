@@ -96,11 +96,16 @@ html, body {
 
 /* Projects Page */
 
-.card {
-  box-shadow: 10px 10px 8px #888888;
+.project-bg {
+    background-image: url("../img/projects-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
 }
 
-.card-text {
+.card {
+  box-shadow: 10px 10px 8px #888888;
   font-family: 'Imprima', sans-serif;
 }
 
@@ -115,7 +120,7 @@ html, body {
 }
 
 .live:hover {
-  background-color: forestgreen;
+  background: forestgreen;
   text-decoration: none;
 }
 
@@ -148,32 +153,80 @@ h2 {
 
 /* Contact Logos */
 
-.linkedin:hover {
-  fill: teal;
-  transform: scale(1.2);
-  transition: .5s;
+hr {
+    width: 80%;
+    margin-left: 15px;
+    margin-top: -
 }
 
-.facebook:hover {
+.card-name {
+  font-family: 'Waiting for the Sunrise', sans-serif;
+}
+
+.contact-bg {
+    background-image: url("../img/contact-bg.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat:repeat;
+    background-size: cover;
+}
+
+.gradient-bg {
+  height: 500px;
+  background-color: black;
+  background-image: linear-gradient(326deg, white 0%, black 74%);
+}
+
+.cullen-contact {
+  border: 4px solid white;
+  height: 50%;
+  width: auto;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.cullen-contact:hover {
+  margin: auto;
+  transform: scale(1.2);
+  transition: .5s;
+  border: 4px solid skyblue;
+}
+
+.social {
+  margin: auto;
+  padding: 8px;
+  border: 2px solid black;
+  border-radius: 10px;
+  width: 80%;
+  background-color: white;
+}
+
+.facebook-btn:hover {
   fill: blue;
   transform: scale(1.2);
   transition: .5s;
 }
 
-.github-contact:hover {
+.linkedin-btn:hover {
+  fill: teal;
+  transform: scale(1.2);
+  transition: .5s;
+}
+
+.github-btn:hover {
   fill: purple;
   transform: scale(1.2);
   transition: .5s;
 }
 
-.email:hover {
-  fill: green;
-  transform: scale(1.2);
-  transition: .5s;
+.hometown {
+  fill: blue;
 }
 
-.phone:hover {
-  fill: orange;
-  transform: scale(1.2);
-  transition: .5s;
+.email {
+  fill: green;
+}
+
+.phone {
+  fill: gold;
 }
