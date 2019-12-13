@@ -1,8 +1,6 @@
 
 // Get the modal
 var modal = document.getElementById("myModal");
-// Get the button that closes the modal
-var span = document.getElementsByClassName("close")[0];
 // Get the button that opens the modal
 var movies = document.getElementById("movies");
 var iceCream = document.getElementById("ice-cream");
@@ -19,7 +17,7 @@ var games = document.getElementById("games");
 movies.onclick = function() {
   modal.style.display = "block";
   modal.innerHTML = `
-  <div class="container">
+  <div class="container-flex">
     <div class="modal-content mx-auto row">
       <span class="close">&times;</span>
         <div class="images-container text-center d-block d-lg-flex">
@@ -38,7 +36,7 @@ movies.onclick = function() {
 iceCream.onclick = function() {
   modal.style.display = "block";
   modal.innerHTML = `
-  <div class="container">
+  <div class="container-flex">
     <div class="modal-content mx-auto row">
       <span class="close">&times;</span>
         <div class="images-container text-center d-block d-lg-flex">
@@ -57,7 +55,7 @@ iceCream.onclick = function() {
 tv.onclick = function() {
   modal.style.display = "block";
   modal.innerHTML = `
-  <div class="container">
+  <div class="container-flex">
     <div class="modal-content mx-auto row">
       <span class="close">&times;</span>
         <div class="images-container text-center d-block d-lg-flex">
@@ -76,7 +74,7 @@ tv.onclick = function() {
 travel.onclick = function() {
   modal.style.display = "block";
   modal.innerHTML = `
-  <div class="container">
+  <div class="container-flex">
     <div class="modal-content mx-auto row">
       <span class="close">&times;</span>
         <div class="images-container text-center d-block d-lg-flex">
@@ -95,7 +93,7 @@ travel.onclick = function() {
 artists.onclick = function() {
   modal.style.display = "block";
   modal.innerHTML = `
-  <div class="container">
+  <div class="container-flex">
     <div class="modal-content mx-auto row">
       <span class="close">&times;</span>
         <div class="images-container text-center d-block d-lg-flex">
@@ -114,7 +112,7 @@ artists.onclick = function() {
 games.onclick = function() {
   modal.style.display = "block";
   modal.innerHTML = `
-  <div class="container">
+  <div class="container-flex">
     <div class="modal-content mx-auto row">
       <span class="close">&times;</span>
         <div class="images-container text-center d-block d-lg-flex">
@@ -129,14 +127,19 @@ games.onclick = function() {
   `
 }
 
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
+//When the user clicks on the modal's x (with a class of close), close the modal
+modal.onclick = function(e) {
+  var target = event.target;
+  if ( target.classList.contains('close') ) {
+    modal.style.display = 'none';
+  }
 }
 
+
 // When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+window.onclick = function(e) {
+  var target = event.target;
+  if ( target.classList.contains('container-flex')) {
+    modal.style.display = 'none';
   }
 }

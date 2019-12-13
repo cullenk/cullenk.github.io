@@ -133,24 +133,38 @@ html, body {
 }
 
 /* Modal  */
-
+.container-flex {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+}
 .modal {
-  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  background-color: rgba(28, 31, 32, 0.76); /* Black w/ opacity */
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center;
 }
 
 .modal-content {
-  background-color: #fefefe;
-  margin: 15% auto; /* 15% from the top and centered */
+  margin: auto;
   padding: 20px;
-  border: 1px solid #888;
   height: auto;
   width: 80% !important;
 }
 
 .modal-content img {
-  height: 35%;
-  width: 35%;
+  min-width: 130px;
+  max-width: 300px;
+  margin: auto;
   padding: 5px;
+  width: 25%; /*This contains the images*/
+  box-sizing: border-box;
 }
 
 .modal-content p {
@@ -158,18 +172,24 @@ html, body {
   border: 2px solid gold;
 }
 
+/* .images-container-nowrap {
+  max-width: 100%;
+  height: auto;
+  overflow:hidden;
+}
+.images-container-nowrap img {
+  min-width: 100px;
+} */
+
 .images-container {
   max-width: 100%;
   height: auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-evenly;
 }
 
 /* The Close Button */
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
 
 .close:hover,
 .close:focus {
