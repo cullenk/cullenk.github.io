@@ -28,8 +28,8 @@ movies.onclick = function() {
       <p class="text-center text-white display-4 mt-3 bg-secondary">Movies</p>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 // ICE CREAM
 iceCream.onclick = function() {
@@ -47,8 +47,8 @@ iceCream.onclick = function() {
       <p class="text-center text-white display-4 mt-3 bg-secondary">Ice Cream</p>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 // TV
 tv.onclick = function() {
@@ -66,8 +66,8 @@ tv.onclick = function() {
       <p class="text-center text-white display-4 mt-3 bg-secondary">TV Shows</p>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 // TRAVEL
 travel.onclick = function() {
@@ -85,8 +85,8 @@ travel.onclick = function() {
       <p class="text-center text-white display-4 mt-3 bg-secondary">Vacation Spots</p>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 // SONGS
 artists.onclick = function() {
@@ -104,8 +104,8 @@ artists.onclick = function() {
       <p class="text-center text-white display-4 mt-3 bg-secondary">Music Artists</p>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 // GAMES
 games.onclick = function() {
@@ -123,8 +123,8 @@ games.onclick = function() {
       <p class="text-center text-white display-4 mt-3 bg-secondary">Games</p>
     </div>
   </div>
-  `
-}
+  `;
+};
 
 //When the user clicks on the modal's x (with a class of close), close the modal
 modal.onclick = function(e) {
@@ -132,7 +132,7 @@ modal.onclick = function(e) {
   if ( target.classList.contains('close') ) {
     modal.style.display = 'none';
   }
-}
+};
 
 
 // When the user clicks anywhere outside of the modal, close it
@@ -141,4 +141,4 @@ window.onclick = function(e) {
   if ( target.classList.contains('container-flex')) {
     modal.style.display = 'none';
   }
-}
+};

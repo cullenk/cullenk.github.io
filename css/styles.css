@@ -376,10 +376,6 @@ html, body {
   100%{opacity: 1}
 }
 
-.card-body:hover {
-
-}
-
 .card {
   box-shadow: 10px 10px 8px #888888;
   font-family: 'Imprima', sans-serif;
