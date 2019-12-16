@@ -11,6 +11,7 @@ html, body {
 #to-top:hover {
   color: gold !important;
   transition: .8s;
+  cursor: pointer;
 }
 
 .jumbotron {
