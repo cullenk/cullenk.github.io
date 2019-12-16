@@ -470,6 +470,19 @@ h2 {
 
 /* Contact*/
 
+#contact-nav {
+  z-index: 2;
+  min-height: 56px;
+  padding: 8px 0;
+}
+#contact-nav button {
+  margin-left: 15px;
+}
+#contact-nav .navbar-collapse {
+  background-color: #343a40;
+  padding: 0 15px;
+}
+
 #contact-card {
   position: relative;
   animation-name: contact-card;
