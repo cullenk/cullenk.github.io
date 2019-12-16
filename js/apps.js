@@ -8,8 +8,6 @@ var travel = document.getElementById("travel");
 var artists = document.getElementById("artists");
 var games = document.getElementById("games");
 
-
-
 // When the user clicks on the button, open the modal...
 
 // MOVIES
