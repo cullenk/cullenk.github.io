@@ -1,0 +1,69 @@
+@keyframes titleanimation {
+  0% {top: -300px}
+  100% {top: 0}
+  0% {opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill-it {
+  100% {
+    fill: black;
+  }
+}
+
+@keyframes strengthIn {
+  0% {left: -600px;}
+  100% {left: 0;}
+  0% {opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes biofade {
+  0% {right: -600px;}
+  100% {right: 0;}
+  0% {opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes skillbounce {
+  0% {top: -400px;}
+  30% {top: 0;}
+  35% {top: -100px;}
+  40% {top: 0;}
+  45% {top: -65px;}
+  50% {top: 0;}
+  55% {top: -45px;}
+  60% {top: 0;}
+  65% {top: -20px;}
+  100% {top: 0;}
+  35% {transform: scaleY(1.2);}
+  40% {transform: scaleY(1);}
+  45% {transform: scaleY(1.2);}
+  50% {transform: scaleY(1);}
+  55% {transform: scaleY(1.2);}
+  60% {transform: scaleY(1);}
+  0% {opacity: 0}
+  100%{opacity: 1}
+}
+
+@keyframes skillsfade {
+  0% {top: -200px;}
+  100% {top: 0;}
+  0% {opacity: 0}
+  75% {opacity: .1}
+  100%{opacity: 1}
+}
+
+
+@keyframes projectsIn {
+  0% {left: -600px;}
+  100% {left: 0;}
+  0% {opacity: 0}
+  100%{opacity: 1}
+}

@@ -1,0 +1,102 @@
+
+.skills {
+  position: relative;
+  animation-name: skillsfade;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+  transition: 1s ease;
+}
+
+
+.skills:hover {
+  letter-spacing: 5px;
+}
+
+.skill-image-circle {
+  height: 120px;
+  width: 120px;
+  padding: 10px;
+}
+
+.skill-image {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+}
+
+.rounded {
+  flex-basis: 50%;
+}
+
+.reveal {
+  transition: .8s ease;
+}
+
+.reveal:hover {
+  transform: scale(1.3);
+}
+
+#html {
+  opacity: 0;
+  position: relative;
+  animation-name: skillbounce;
+  animation-duration: 3.3s;
+  animation-fill-mode: forwards;
+  transition: ease-in;
+}
+
+#css {
+  opacity: 0;
+  position: relative;
+  animation-name: skillbounce;
+  animation-duration: 3.3s;
+  animation-delay: .2s;
+  animation-fill-mode: forwards;
+  transition: ease-in;
+}
+
+
+#javascript {
+  opacity: 0;
+  position: relative;
+  animation-name: skillbounce;
+  animation-duration: 3.3s;
+  animation-delay: .3s;
+  animation-fill-mode: forwards;
+  transition: ease-in;
+}
+
+#sass {
+  opacity: 0;
+  position: relative;
+  animation-name: skillbounce;
+  animation-duration: 3.3s;
+  animation-delay: .4s;
+  animation-fill-mode: forwards;
+  transition: ease-in;
+}
+
+#bootstrap {
+  opacity: 0;
+  position: relative;
+  animation-name: skillbounce;
+  animation-duration: 3.3s;
+  animation-delay: .5s;
+  animation-fill-mode: forwards;
+  transition: ease-in;
+}
+
+#jquery {
+  opacity: 0;
+  position: relative;
+  animation-name: skillbounce;
+  animation-duration: 3.3s;
+  animation-delay: .6s;
+  animation-fill-mode: forwards;
+  transition: ease-in;
+}
+
+.project-cards {
+  position: relative;
+  animation: projectsIn 1s;
+}

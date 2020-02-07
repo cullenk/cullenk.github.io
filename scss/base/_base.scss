@@ -1,0 +1,24 @@
+html, body {
+  height: 100%;
+}
+
+h3 {
+  color: red;
+  font-family: $font-secondary;
+}
+
+p {
+  font-family: $font-primary;
+  color: $color-secondary;
+  transition: .6s ease;
+}
+
+h5 {
+  color: $color-primary;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+}

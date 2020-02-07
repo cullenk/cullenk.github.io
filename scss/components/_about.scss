@@ -1,0 +1,14 @@
+
+.page-bg {
+  background-color: $page-background-color;
+}
+
+#biofade {
+  position: relative;
+  animation: biofade 1s;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 15px;
+}

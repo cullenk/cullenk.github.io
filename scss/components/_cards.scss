@@ -1,0 +1,37 @@
+
+
+.strength-cards {
+  position: relative;
+  animation: strengthIn 1s;
+  margin-bottom: 50px;
+}
+
+.card-body {
+  background-color: $card-background-color;
+  transition: .6s ease;
+}
+
+.card-body:hover p {
+  color: white;
+}
+
+.strength-icon {
+  fill: $color-secondary;
+  transition: .6s ease;
+}
+
+.card-body:hover svg {
+  fill: $color-primary;
+}
+
+.live, .github {
+  color: $color-secondary;
+  transition: .6s ease;
+}
+
+.live:hover,
+.github:hover {
+  background-color: $color-primary;
+  color: $page-background-color;
+  text-decoration: none;
+}

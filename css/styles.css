@@ -1,21 +1,223 @@
-
 html, body {
   height: 100%;
 }
 
+h3 {
+  color: red;
+  font-family: "Waiting for the Sunrise", sans-serif;
+}
+
+p {
+  font-family: "Imprima", sans-serif;
+  color: #414656;
+  transition: 0.6s ease;
+}
+
+h5 {
+  color: #80f1ff;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.3rem;
+  }
+}
+.page-bg {
+  background-color: #1e2430;
+}
+
+#biofade {
+  position: relative;
+  animation: biofade 1s;
+}
+
+.title {
+  font-size: 3em;
+  margin-bottom: 15px;
+}
+
+.strength-cards {
+  position: relative;
+  animation: strengthIn 1s;
+  margin-bottom: 50px;
+}
+
+.card-body {
+  background-color: rgba(65, 70, 86, 0.1);
+  transition: 0.6s ease;
+}
+
+.card-body:hover p {
+  color: white;
+}
+
+.strength-icon {
+  fill: #414656;
+  transition: 0.6s ease;
+}
+
+.card-body:hover svg {
+  fill: #80f1ff;
+}
+
+.live, .github {
+  color: #414656;
+  transition: 0.6s ease;
+}
+
+.live:hover,
+.github:hover {
+  background-color: #80f1ff;
+  color: #1e2430;
+  text-decoration: none;
+}
+
+@keyframes titleanimation {
+  0% {
+    top: -300px;
+  }
+  100% {
+    top: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes offset {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fill-it {
+  100% {
+    fill: black;
+  }
+}
+@keyframes strengthIn {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes biofade {
+  0% {
+    right: -600px;
+  }
+  100% {
+    right: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes skillbounce {
+  0% {
+    top: -400px;
+  }
+  30% {
+    top: 0;
+  }
+  35% {
+    top: -100px;
+  }
+  40% {
+    top: 0;
+  }
+  45% {
+    top: -65px;
+  }
+  50% {
+    top: 0;
+  }
+  55% {
+    top: -45px;
+  }
+  60% {
+    top: 0;
+  }
+  65% {
+    top: -20px;
+  }
+  100% {
+    top: 0;
+  }
+  35% {
+    transform: scaleY(1.2);
+  }
+  40% {
+    transform: scaleY(1);
+  }
+  45% {
+    transform: scaleY(1.2);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  55% {
+    transform: scaleY(1.2);
+  }
+  60% {
+    transform: scaleY(1);
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes skillsfade {
+  0% {
+    top: -200px;
+  }
+  100% {
+    top: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0.1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes projectsIn {
+  0% {
+    left: -600px;
+  }
+  100% {
+    left: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .navigation {
   z-index: 2;
   width: 100%;
 }
 
-#to-top:hover {
-  color: gold !important;
-  transition: .8s;
-  cursor: pointer;
-}
-
 .jumbotron {
-  font-family: 'Waiting for the Sunrise', sans-serif;
+  font-family: "Waiting for the Sunrise", sans-serif;
 }
 
 .title-card {
@@ -24,47 +226,28 @@ html, body {
   animation: titleanimation;
   animation-duration: 2s;
   animation-fill-mode: forwards;
-}
-
-@keyframes titleanimation {
-  0% {top: -300px}
-  100% {top: 0}
-  0% {opacity: 0}
-  100%{opacity: 1}
+  transition: 1s ease;
 }
 
 .title-card:hover {
   transform: scale(1.2);
   letter-spacing: 5px;
-  transition: 2s;
 }
 
 .sub {
   color: red;
   font-size: 1.8em;
 }
+
 /* SVG Background Styles */
-
-@keyframes offset {
-  100% {
-    stroke-dashoffset: 0;
-  }
-}
-
-@keyframes fill-it {
-  100% {
-    fill: black;
-  }
-}
-
 .skyline {
- max-width: 100vw;
- min-height: 80vh;
- position: absolute;
- bottom: 0;
- z-index: -1;
- background-color: blue;
- background-image: linear-gradient(326deg, navy 0%, skyblue 74%);
+  max-width: 100vw;
+  min-height: 80vh;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+  background-color: blue;
+  background-image: linear-gradient(326deg, navy 0%, skyblue 74%);
 }
 
 .logo {
@@ -72,213 +255,43 @@ html, body {
   stroke-width: 13;
   stroke-dasharray: 95294.8984375;
   stroke-dashoffset: 95294.8984375;
-
-  animation: offset 4s linear forwards, fill-it .8s 4s forwards;
+  animation: offset 4s linear forwards, fill-it 0.8s 4s forwards;
 }
 
-/* About Page */
-
-.film-bg {
-  background-image: url("../img/film-background.jpg");
-  height: 100%;
-  background-position: center;
-  background-repeat:repeat;
-  background-size: cover;
-}
-
-#cullenfade {
+.skills {
   position: relative;
-  animation-name: cullenfade;
+  animation-name: skillsfade;
   animation-duration: 2s;
   animation-fill-mode: forwards;
+  transition: 1s ease;
 }
 
-@keyframes cullenfade {
-  0% {left: -600px;}
-  100% {left: 0;}
-  0% {opacity: 0}
-  100%{opacity: 1}
+.skills:hover {
+  letter-spacing: 5px;
 }
 
-#biofade {
-  position: relative;
-  animation-name: biofade;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+.skill-image-circle {
+  height: 120px;
+  width: 120px;
+  padding: 10px;
 }
 
-@keyframes biofade {
-  0% {right: -600px;}
-  100% {right: 0;}
-  0% {opacity: 0}
-  100%{opacity: 1}
+.skill-image {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
 }
 
-.profile-pic {
-  border-radius: 6%;
-  height: 30%;
-  width: 30%;
-  max-height: 310px;
-  max-width: 207px;
-  margin: auto;
+.rounded {
+  flex-basis: 50%;
 }
 
-.bio h3{
-  font-size: 3em;
-  color: red;
+.reveal {
+  transition: 0.8s ease;
 }
 
-.bio p {
-  font-size: 1.3rem;
-  font-family: 'Imprima', sans-serif;
-}
-
-/* Carousel */
-.carousel-box {
-  max-width: 1500px;
-  position: relative;
-  animation-name: aboutpage;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes aboutpage {
-  0% {bottom: -600px;}
-  100% {bottom: 0;}
-  0% {opacity: 0}
-  100%{opacity: 1}
-}
-
-
-.carousel-item img{
-  height: auto;
-  width: 100%;
-  object-fit: contain;
-}
-
-/* Favorite Things */
-
-.movies:hover {
-  fill: gold;
-  transform: scale(1.5);
-  transition: .5s;
-  cursor: pointer;
-}
-
-.ice-cream:hover {
-  fill: greenyellow;
-  transform: scale(1.5);
-  transition: .5s;
-  cursor: pointer;
-}
-
-.tv:hover {
-  fill: darkviolet;
-  transform: scale(1.5);
-  transition: .5s;
-  cursor: pointer;
-}
-
-.travel:hover {
-  fill: deepskyblue;
-  transform: scale(1.5);
-  transition: .5s;
-  cursor: pointer;
-}
-
-.artists:hover {
-  fill: darkslategray;
-  transform: scale(1.5);
-  transition: .5s;
-  cursor: pointer;
-}
-
-.games:hover {
-  fill: firebrick;
-  transform: scale(1.5);
-  transition: .5s;
-  cursor: pointer;
-}
-
-/* Modal  */
-.container-flex {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-.modal {
-  background-color: rgba(28, 31, 32, 0.76); /* Black w/ opacity */
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center;
-}
-
-.modal-content {
-  margin: auto;
-  padding: 20px;
-  height: auto;
-  width: 80% !important;
-  animation-name: modal-slide;
-  animation-duration: 1s;
-}
-
-@keyframes modal-slide {
-  0% {bottom: 100px;}
-  100% {bottom: 0;}
-  0% {opacity: 0;}
-  100% {opacity: 1;}
-}
-
-.modal-content img {
-  min-width: 130px;
-  max-width: 300px;
-  margin: auto;
-  padding: 5px;
-  width: 25%; /*This contains the images*/
-  box-sizing: border-box;
-}
-
-.modal-content img:hover {
-  border: 4px solid greenyellow;
-}
-
-.modal-content p {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-  border: 2px solid gold;
-}
-
-.images-container {
-  max-width: 100%;
-  height: auto;
-  overflow: hidden;
-  display: flex;
-  justify-content: space-evenly;
-}
-
-/* The Close Button */
-
-.close:hover,
-.close:focus {
-  color: black;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-
-/* Projects Page */
-
-.project-bg {
-    background-image: url("../img/projects-bg.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat:repeat;
-    background-size: cover;
+.reveal:hover {
+  transform: scale(1.3);
 }
 
 #html {
@@ -295,18 +308,17 @@ html, body {
   position: relative;
   animation-name: skillbounce;
   animation-duration: 3.3s;
-  animation-delay: .2s;
+  animation-delay: 0.2s;
   animation-fill-mode: forwards;
   transition: ease-in;
 }
-
 
 #javascript {
   opacity: 0;
   position: relative;
   animation-name: skillbounce;
   animation-duration: 3.3s;
-  animation-delay: .3s;
+  animation-delay: 0.3s;
   animation-fill-mode: forwards;
   transition: ease-in;
 }
@@ -316,7 +328,7 @@ html, body {
   position: relative;
   animation-name: skillbounce;
   animation-duration: 3.3s;
-  animation-delay: .4s;
+  animation-delay: 0.4s;
   animation-fill-mode: forwards;
   transition: ease-in;
 }
@@ -326,7 +338,7 @@ html, body {
   position: relative;
   animation-name: skillbounce;
   animation-duration: 3.3s;
-  animation-delay: .5s;
+  animation-delay: 0.5s;
   animation-fill-mode: forwards;
   transition: ease-in;
 }
@@ -336,148 +348,26 @@ html, body {
   position: relative;
   animation-name: skillbounce;
   animation-duration: 3.3s;
-  animation-delay: .6s;
+  animation-delay: 0.6s;
   animation-fill-mode: forwards;
   transition: ease-in;
 }
 
-@keyframes skillbounce {
-  0% {top: -400px;}
-  30% {top: 0;}
-  35% {top: -100px;}
-  40% {top: 0;}
-  45% {top: -65px;}
-  50% {top: 0;}
-  55% {top: -45px;}
-  60% {top: 0;}
-  65% {top: -20px;}
-  100% {top: 0;}
-  35% {transform: scaleY(1.2);}
-  40% {transform: scaleY(1);}
-  45% {transform: scaleY(1.2);}
-  50% {transform: scaleY(1);}
-  55% {transform: scaleY(1.2);}
-  60% {transform: scaleY(1);}
-  0% {opacity: 0}
-  100%{opacity: 1}
-}
-
-.project-card {
+.project-cards {
   position: relative;
-  animation-name: projectcards;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
+  animation: projectsIn 1s;
 }
-
-.project-card:hover {
-  transform: scale(1.1);
-}
-
-.project-card:hover .card-body {
-  background-color: #062F57;
-  color: white;
-  transition: .2s;
-}
-
-@keyframes projectcards {
-  0% {bottom: -600px;}
-  100% {bottom: 0;}
-  0% {opacity: 0}
-  100%{opacity: 1}
-}
-
-.card {
-  box-shadow: 10px 10px 8px #888888;
-  font-family: 'Imprima', sans-serif;
-}
-
-.live {
-  background-color: lightgreen;
-  transition: .5s;
-}
-
-.github {
-  background: lightsteelblue;
-  transition: .5s;
-}
-
-.live:hover {
-  background: forestgreen;
-  text-decoration: none;
-}
-
-.github:hover {
-  background: dodgerblue;
-  text-decoration: none;
-}
-
-.skills,
-h2 {
-  font-family: 'Waiting for the Sunrise', sans-serif;
-}
-
-.skills {
-  position: relative;
-  animation-name: skillsfade;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes skillsfade {
-  0% {top: -200px;}
-  100% {top: 0;}
-  0% {opacity: 0}
-  75% {opacity: .1}
-  100%{opacity: 1}
-}
-
-.skills:hover {
-  letter-spacing: 5px;
-  transition: 1s;
-}
-
-.skill-image-circle {
-  height: 120px;
-  width: 120px;
-  padding: 10px;
-}
-
-.skill-image {
-  height: 100px;
-  width: 100px;
-  padding: 10px;
-}
-
-.skill-info {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.project-link {
-  display: flex;
-  flex-direction: row;
-}
-
-.rounded {
-  flex-basis: 50%;
-}
-
-.reveal:hover {
-  transform: scale(1.3);
-  transition: .5s;
-}
-
-/* Contact*/
 
 #contact-nav {
   z-index: 2;
   min-height: 56px;
   padding: 8px 0;
 }
+
 #contact-nav button {
   margin-left: 15px;
 }
+
 #contact-nav .navbar-collapse {
   background-color: #343a40;
   padding: 0 15px;
@@ -490,43 +380,37 @@ h2 {
   animation-fill-mode: forwards;
 }
 
-#contact-card:hover {
-  transform: scale(1.1);
-  transition: .2s;
-
-}
-
 @keyframes contact-card {
-  0% {right: -600px;}
-  100% {right: 0;}
-  0% {opacity: 0}
-  100%{opacity: 1}
+  0% {
+    right: -600px;
+  }
+  100% {
+    right: 0;
+  }
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
-
 hr {
-    width: 80%;
-    margin-left: 15px;
+  width: 80%;
+  margin-left: 15px;
 }
 
 .card-name {
-  font-family: 'Waiting for the Sunrise', sans-serif;
+  font-family: "Waiting for the Sunrise", sans-serif;
 }
 
-.contact-bg {
-    background-image: url("../img/contact-bg.jpg");
-    height: 100%;
-    background-position: center;
-    background-repeat:repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contact-name {
+  background-color: inherit;
 }
 
 .gradient-bg {
   height: 500px;
-  background-color: black;
-  background-image: linear-gradient(326deg, white 0%, black 74%);
+  background-color: #1e2430;
+  background-image: linear-gradient(326deg, white 0%, rgba(65, 70, 86, 0.1) 74%);
 }
 
 .cullen-contact {
@@ -540,7 +424,7 @@ hr {
 .cullen-contact:hover {
   margin: auto;
   transform: scale(1.2);
-  transition: .5s;
+  transition: 0.5s;
   border: 4px solid skyblue;
 }
 
@@ -550,25 +434,17 @@ hr {
   border: 2px solid black;
   border-radius: 10px;
   width: 80%;
-  background-color: white;
+  background-color: #1e2430;
 }
 
-.facebook-btn:hover {
-  fill: blue;
-  transform: scale(1.2);
-  transition: .5s;
+.facebook-btn svg,
+.linkedin-btn svg,
+.github-btn svg {
+  fill: #80f1ff;
 }
 
-.linkedin-btn:hover {
-  fill: teal;
+svg:hover {
   transform: scale(1.2);
-  transition: .5s;
-}
-
-.github-btn:hover {
-  fill: purple;
-  transform: scale(1.2);
-  transition: .5s;
 }
 
 .hometown {
@@ -582,3 +458,5 @@ hr {
 .phone {
   fill: gold;
 }
+
+/*# sourceMappingURL=styles.css.map */
