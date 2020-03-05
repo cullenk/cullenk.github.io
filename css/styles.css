@@ -14,7 +14,7 @@ p {
 }
 
 h5 {
-  color: #80f1ff;
+  color: black;
 }
 
 @media (min-width: 768px) {
@@ -434,13 +434,19 @@ hr {
   border: 2px solid black;
   border-radius: 10px;
   width: 80%;
-  background-color: #1e2430;
+  background-color: white;
 }
 
-.facebook-btn svg,
-.linkedin-btn svg,
+.facebook-btn svg {
+  fill: #3b5998;
+}
+
+.linkedin-btn svg {
+  fill: #0072b1;
+}
+
 .github-btn svg {
-  fill: #80f1ff;
+  fill: #6e5494;
 }
 
 svg:hover {
