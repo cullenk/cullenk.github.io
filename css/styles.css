@@ -408,7 +408,7 @@ hr {
 }
 
 .gradient-bg {
-  height: 500px;
+  height: 531px;
   background-color: #1e2430;
   background-image: linear-gradient(326deg, white 0%, rgba(65, 70, 86, 0.1) 74%);
 }
@@ -437,20 +437,20 @@ hr {
   background-color: white;
 }
 
+svg:hover {
+  transform: scale(1.2);
+}
+
 .facebook-btn svg {
   fill: #3b5998;
 }
 
 .linkedin-btn svg {
-  fill: #0072b1;
+  fill: #0e76a8;
 }
 
 .github-btn svg {
   fill: #6e5494;
-}
-
-svg:hover {
-  transform: scale(1.2);
 }
 
 .hometown {
@@ -463,6 +463,10 @@ svg:hover {
 
 .phone {
   fill: gold;
+}
+
+.resume {
+  fill: tomato;
 }
 
 /*# sourceMappingURL=styles.css.map */

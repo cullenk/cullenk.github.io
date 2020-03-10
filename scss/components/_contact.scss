@@ -40,7 +40,7 @@ hr {
 }
 
 .gradient-bg {
-  height: 500px;
+  height: 531px;
   background-color: $page-background-color;
   background-image: linear-gradient(326deg, white 0%, $card-background-color 74%);
 }
@@ -66,19 +66,24 @@ hr {
   border: 2px solid black;
   border-radius: 10px;
   width: 80%;
-  background-color: $page-background-color;
-}
-
-.facebook-btn svg,
-.linkedin-btn svg,
-.github-btn svg {
-  fill: $color-primary;
+  background-color: white;
 }
 
 svg:hover {
   transform: scale(1.2);
   }
 
+.facebook-btn svg {
+  fill: #3b5998;
+}
+
+.linkedin-btn svg {
+  fill: #0e76a8;
+}
+
+.github-btn svg {
+  fill: #6e5494;
+}
 
 .hometown {
   fill: blue;
@@ -90,4 +95,8 @@ svg:hover {
 
 .phone {
   fill: gold;
+}
+
+.resume {
+  fill: tomato;
 }
