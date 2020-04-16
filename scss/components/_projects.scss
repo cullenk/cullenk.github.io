@@ -1,4 +1,43 @@
 
+//Loading Screen
+
+#loading-screen {
+  font-family: 'Anton', sans-serif;
+  letter-spacing: 10px;
+  position: fixed;
+  z-index: 101;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #04c0fb;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
+
+.loaderHidden {
+  animation: loaderOut 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes loaderOut {
+  100% {
+      opacity: 0;
+      visibility: hidden;
+    }
+}
+
+.loading-text {
+  font-family: 'Anton', sans-serif;
+  color: white;
+}
+
+//Skill Circles
+
 .skills {
   position: relative;
   animation-name: skillsfade;
